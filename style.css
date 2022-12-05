@@ -1,0 +1,16 @@
+:root {
+    --black-purple: #2E2D31;
+    --dark-purple: #5D44AB;
+    --purple-rouge: #7654B4;
+    --damp-purple: #0E002C;
+    --light-purple: #967ECB;
+    --footer-purple: #654C8C;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
