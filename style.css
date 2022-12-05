@@ -23,8 +23,15 @@ header {
     flex-wrap: wrap;
 }
 
+img {
+    margin: 2rem;
+}
+
 .far-away-module {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: white;
     width: 100vw;
     background-color: var(--black-purple);
@@ -86,8 +93,29 @@ header {
     background-color: var(--damp-purple);
     color: white;
     grid-area: far-away;
+    text-align: center;
+    min-height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-space-module__constellation {
     background-color: var(--black-purple);
+    width: 100vw;
+}
+
+.contact-form {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    /* ---- header styling ---- */
+    header,
+    .main-space-module {
+        flex-wrap: nowrap;
+    }
+    .contact-form {
+        display: flex;
+    }
 }
