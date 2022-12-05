@@ -14,3 +14,80 @@
 body {
     margin: 0;
 }
+
+
+/* ---- header styling ---- */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.far-away-module {
+    text-align: center;
+    color: white;
+    width: 100vw;
+    background-color: var(--black-purple);
+}
+
+.four-squares {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.four-squares__planet {
+    background-color: var(--dark-purple);
+}
+
+.four-squares__helmet {
+    background-color: var(--purple-rouge);
+}
+
+.four-squares__lasergun {
+    background-color: var(--light-purple);
+}
+
+.four-squares__rocket {
+    background-color: var(--damp-purple);
+}
+
+
+/* ---- main styling ---- */
+
+.hero {
+    height: 12.5rem;
+    background: linear-gradient(to bottom, #7645be4e, #7645be4e), url('./assets/astronaut.jpg');
+    background-size: cover;
+}
+
+.main-space-module {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main-space-module__space-squares {
+    width: 100vw;
+    display: grid;
+    grid-template-areas: "satellite three-planets" "far-away far-away"
+}
+
+.main-space-module__space-squares--light-purple {
+    background-color: var(--light-purple);
+    grid-area: satellite;
+}
+
+.main-space-module__space-squares--dark-purple {
+    background-color: var(--dark-purple);
+    grid-area: three-planets;
+}
+
+.main-space-module__space-squares--damp-purple {
+    background-color: var(--damp-purple);
+    color: white;
+    grid-area: far-away;
+}
+
+.main-space-module__constellation {
+    background-color: var(--black-purple);
+}
